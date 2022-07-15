@@ -18,8 +18,8 @@ const Header = () => {
             <SingupButton className={classes.Button}/>
           </Link>
         </Box>
-        <Box className="feature-wrapper-home">
-          <Box className="feature-title-home">
+        <Box className={classes.wrapperHome}>
+          <Box className={classes.titleHome}>
             Unlimited movies, TV shows and more.
           </Box>
         </Box>

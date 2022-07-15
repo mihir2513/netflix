@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core";
 // import image from "../../../../public/assets/"
-import bg from '../CustomeHook/home-bg.jpeg'
+import bg from "../CustomeHook/home-bg.jpeg";
 const useStyle = makeStyles(() => ({
   input: {
     background: "#333",
@@ -69,7 +69,7 @@ const useStyle = makeStyles(() => ({
     marginRight: "auto",
     marginLeft: "auto",
   },
- home: {
+  home: {
     background: `url(${bg})`,
     backgroundPosition: "top left",
     backgroundSize: "cover",
@@ -127,6 +127,70 @@ const useStyle = makeStyles(() => ({
     fontSize: "50px",
     fontWeight: "700",
     margin: "auto",
+  },
+  optformButton: {
+    width: "fit-content",
+    height: "60px",
+    background: "#e50914",
+    color: "#fff",
+    textTransform: "uppercase",
+    padding: "0 32px",
+    fontSize: "26px",
+    border: " 0",
+    cursor: "pointer",
+    display: "flex",
+    alignItems: "center",
+  },
+  formEmail: {
+    maxWidth: "450px",
+    width: "100%",
+    border: "1",
+    borderColor: "white",
+    padding: "10px",
+    height: "1.1876em",
+    fontSize: "20px",
+  },
+  formWrapper: {
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "20px",
+    marginBottom: "70px",
+    padding: "0 20px",
+  },
+  formText: {
+    fontSize: "19px",
+    color: "#fff",
+    textAlign: "center",
+    padding: "0 20px",
+  },
+  contentTitle: {
+    fontSize: "3rem",
+    lineHeight: "1.1",
+    marginBottom: "8px",
+    paddingRight: "100px",
+    color: "#fff",
+  },
+  contentSubTitle: {
+    fontSize: "1.5rem",
+    fontWeight: "normal",
+    lineHeight: "normal",
+    paddingRight: "100px",
+    color: "#fff",
+  },
+  ContentImage: {
+    maxWidth: "100%",
+    height: "auto",
+  },
+  ContentItem: {
+    padding: "70px 5%",
+    maxWidth: "100%",
+    margin: "auto",
+    display: "flex",
+    justifyContent: "flex-end",
+    borderBottom: "4px solid #222",
+  },
+  textContent: {
+    boxSizing: "border-box",
   },
 }));
 export default useStyle;

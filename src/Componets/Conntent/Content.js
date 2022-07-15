@@ -4,36 +4,31 @@ import ContentTitle from "./ContentTitle";
 import ContentSubTitle from "./ContentSubTitle";
 import { Box, makeStyles } from "@material-ui/core";
 import ContentImage from "./ContentImage";
-import Seprator from "../Seprator/Seprator";
+import useStyle from "../SingForm/CustomeHook/useStyle";
 
-const useStyle = makeStyles(() => ({
-    textContent: {
-        boxSizing: 'border-box',
-    },  
-    content:{
-        boxSizing: 'border-box',
-    },
-
-  }));
 const Content = () => {
-    const classes=useStyle();
+  const classes = useStyle();
   return (
     <>
-      {content.map((item ,index) => (
-        
+      {content.map((item, index) => (
         <ContentItem key={index}>
-            <Box className={classes.textContent}>
-          <ContentTitle>{item.title}</ContentTitle>
-          <ContentSubTitle>{item.subTitle}</ContentSubTitle>
+          <Box className={classes.textContent}>
+            <ContentTitle className={classes.contentTitle}>
+              {item.title}
+            </ContentTitle>
+            <ContentSubTitle className={classes.contentSubTitle}>
+              {item.subTitle}
+            </ContentSubTitle>
           </Box>
-          <Box className={classes.content}>
-            <ContentImage src={item.image} alt={item.alt}/>
-          </Box> 
+          <Box className={classes.textContent}>
+            <ContentImage
+              className={classes.ContentImage}
+              src={item.image}
+              alt={item.alt}
+            />
+          </Box>
         </ContentItem>
-       
-              
       ))}
-      
     </>
   );
 };

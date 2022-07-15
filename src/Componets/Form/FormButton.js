@@ -1,24 +1,11 @@
 import { Box, Button, makeStyles } from "@material-ui/core";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
-const useStyle = makeStyles(() => ({
-  button: {
-    background: "#e50914",
-    color: "#fff",
-    width: "fit-content",
-    height: "60px",
-    textTransform: "uppercase",
-    padding: "0 32px",
-    fontSize: "26px",
-    cursor: "pointer",
-    display: "flex",
-    alignItems: "center",
-  },
-}));
-const FormButton = () => {
-  const classes = useStyle();
+
+const FormButton = (props) => {
+
   return (
     <>
-      <Button className={classes.button}>
+      <Button {...props}>
         Get Started <ArrowForwardIosIcon />
       </Button>
     </>
