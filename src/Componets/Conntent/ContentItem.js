@@ -1,14 +1,9 @@
-import { Box, makeStyles } from "@material-ui/core";
-const useStyle = makeStyles(() => ({
-  
-}));
+import { Box } from "@material-ui/core";
+
 const ContentItem = (props) => {
-  const classes = useStyle();
   return (
     <>
-      <Box {...props} >
-        {props.children}hjdgfhidgsy
-      </Box>
+      <Box {...props}>{props.children}</Box>
     </>
   );
 };

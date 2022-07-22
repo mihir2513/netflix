@@ -2,7 +2,7 @@ import ContentItem from "./ContentItem";
 import content from "../../Data/content.json";
 import ContentTitle from "./ContentTitle";
 import ContentSubTitle from "./ContentSubTitle";
-import { Box, makeStyles } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 import ContentImage from "./ContentImage";
 import useStyle from "../SingForm/CustomeHook/useStyle";
 
@@ -11,7 +11,7 @@ const Content = () => {
   return (
     <>
       {content.map((item, index) => (
-        <ContentItem key={index}>
+        <ContentItem key={index} className={classes.ContentItem}>
           <Box className={classes.textContent}>
             <ContentTitle className={classes.contentTitle}>
               {item.title}

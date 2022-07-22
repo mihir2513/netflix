@@ -9,12 +9,13 @@ const Form = () => {
         Ready to watch? Enter your email to create or restart your membership.
       </Box>
       <Box className={classes.formWrapper}>
-        <TextField
+        {/* <TextField
           variant="outlined"
           color="secondary"
           focused
           className={classes.formEmail}
-        ></TextField>
+        ></TextField> */}
+        <input className={classes.formEmail}></input>
         <FormButton className={classes.optformButton}/>
       </Box>
     </>
